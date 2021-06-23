@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh -l
 # echidna_test . --contract $CONTRACT_NAME
-ls
+sh -c "ls"
