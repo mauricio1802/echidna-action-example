@@ -1,2 +1,3 @@
 #!/bin/bash
-echidna_test . --contract $CONTRACT_NAME
+# echidna_test . --contract $CONTRACT_NAME
+ls
