@@ -1,0 +1,10 @@
+name: Echidna audits workflow
+on: push
+
+jobs:
+  echidna-audit-Fallback:
+    name: Echidna audit Fallback contract
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ../actions/action-a
