@@ -1,5 +1,6 @@
 name: Echidna audits workflow
-on: push
+on: 
+  workflow_dispatch:
 
 jobs:
   echidna-audit-Fallback:
