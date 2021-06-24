@@ -38,7 +38,7 @@ contract Fallback {
     owner.transfer(address(this).balance);
   }
 
-  fallback() external payable  {
+  fallback() external payable onlyOwner {
     require(msg.value > 0 && contributions[msg.sender] > 0);
     owner = msg.sender;
   }
