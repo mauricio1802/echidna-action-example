@@ -10,6 +10,7 @@
 bash -c "ln -s /root/.local /github/.local"
 bash -c "ls -a ../"
 bash -c "ls -a"
+bash -c "python3 -m pip install crytic-compile"
 bash -c "echo $PWD"
 bash -c "echidna-test --version"
 bash -c "crytic-compile --version"
