@@ -8,6 +8,7 @@
 # sh -c "npm install"
 # sh -c "echidna-test . --contract Fallback"
 bash -c "ln -s /root/.local /github/.local"
+bash -c "ls -a ../"
 bash -c "ls -a"
 bash -c "echo $PWD"
 bash -c "echidna-test --version"
