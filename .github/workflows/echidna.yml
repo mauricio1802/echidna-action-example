@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/action-a
-        workdir: /root/repo
         with:
           CONTRACT_NAME: "Fallback"
+          working-directory: /root/repo
