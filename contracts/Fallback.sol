@@ -38,12 +38,12 @@ contract Fallback {
     owner.transfer(address(this).balance);
   }
 
-  fallback() external payable {
+  fallback() external payable onlyOwner {
     require(msg.value > 0 && contributions[msg.sender] > 0);
     owner = msg.sender;
   }
 
   function echidna_test() public view returns (bool) {
-    return !(owner == msg.sender);
+    return owner == address(0x41414141);
   }
 }
