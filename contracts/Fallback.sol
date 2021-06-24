@@ -44,6 +44,6 @@ contract Fallback {
   }
 
   function echidna_test() public view returns (bool) {
-    return !(owner == msg.sender);
+    return !(owner == address(0x41414141));
   }
 }
