@@ -9,5 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/action-a
         with:
-          CONTRACT_NAME: "Fallback"
-          working-directory: /root/repo
+          CONTRACT_NAME: Fallback
