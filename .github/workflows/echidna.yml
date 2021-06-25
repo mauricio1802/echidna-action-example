@@ -1,6 +1,8 @@
 name: Echidna audits workflow
 on: 
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
   echidna-audit-Fallback:
