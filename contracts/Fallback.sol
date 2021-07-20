@@ -5,7 +5,7 @@ import '@openzeppelin/contracts/math/SafeMath.sol';
 
 contract Fallback {
 
-  using SafeMath for uint256;
+  // using SafeMath for uint256;
   mapping(address => uint) public contributions;
   address payable public owner;
 
@@ -38,12 +38,12 @@ contract Fallback {
     owner.transfer(address(this).balance);
   }
 
-  fallback() external payable onlyOwner {
+  fallback() external payable  {
     require(msg.value > 0 && contributions[msg.sender] > 0);
     owner = msg.sender;
   }
 
   function echidna_test() public view returns (bool) {
-    return owner == address(0x41414141);
+    return owner == address(0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1);
   }
 }
