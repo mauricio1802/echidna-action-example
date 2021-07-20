@@ -18,7 +18,7 @@ jobs:
       - name: Install Slither
         run: pip install slither-analyzer
       - name: Download Echidna
-        run: https://github.com/crytic/echidna/releases/download/v1.7.2/echidna-test-1.7.2-Ubuntu-18.04.tar.gz && tar -xf echidna-test-1.7.2-Ubuntu-18.04.tar.gz
+        run: wget https://github.com/crytic/echidna/releases/download/v1.7.2/echidna-test-1.7.2-Ubuntu-18.04.tar.gz && tar -xf echidna-test-1.7.2-Ubuntu-18.04.tar.gz
       - name: Creating init file
         run: python ./.github/actions/action-a/create_init.py
       - name: Run Echidna
